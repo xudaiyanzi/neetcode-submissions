@@ -1,0 +1,13 @@
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        res = 1
+        if n >= 0:
+            for i in range(n):
+                res *= x
+            return res
+        
+        else:
+            n = -n
+            for i in range(n):
+                res *= x
+            return 1/res
